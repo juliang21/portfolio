@@ -18,7 +18,7 @@
 }
 
 .logo_mobile img {
-  width: 4.2rem;
+  width: 4.5rem;
   margin-top: 6rem;
   margin-bottom: 4rem;
 }
@@ -85,4 +85,21 @@
 .desktop {
   display: none;
 }
+}
+
+/* Tablet  */
+@media (min-width: 575px) and (max-width: 979px) {
+
+.tablet {
+  display: block;
+}
+
+.flex-container {
+  display: none;
+}
+
+.flex-header {
+  display: none;
+}
+
 }

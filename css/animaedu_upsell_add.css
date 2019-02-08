@@ -220,7 +220,6 @@ Visual Design section
   ". hifi_flow ."
   ". hifi_flow_img ."
   ". hifi_2 ."
-
 }
 
 /* ------
@@ -232,6 +231,124 @@ Results section
   ". kpis ."
   ". img_kpis ."
 }
+
+}
+
+
+
+/* ----
+CSS for Tablet
+-----
+*/
+@media (min-width: 575px) and (max-width: 979px) {
+
+  /* ------
+  Overview sections
+  --------*/
+
+
+  .overview {
+    grid-template-areas:
+    ". role role role role ."
+    ". overview_intro overview_intro overview_intro overview_intro ."
+    ". problem problem problem . ."
+    ". img_problem img_problem img_problem img_problem ."
+    ". solution solution solution . ."
+    ". img_solution img_solution img_solution img_solution ."
+  }
+
+
+  /* ------
+  Research section
+  --------*/
+
+  .research {
+    grid-template-areas:
+    ". research_intro research_intro research_intro research_intro ."
+    ". competitive_desc competitive_desc competitive_desc competitive_desc ."
+    ". competitive_block competitive_block competitive_block competitive_block ."
+    ". competitive-case1 competitive-case1 competitive-case1 competitive-case1 ."
+    ". competitive-case2 competitive-case2 competitive-case2 competitive-case2."
+    ". survey_desc survey_desc survey_desc survey_desc ."
+    ". survey_block survey_block survey_block survey_block ."
+  }
+
+
+  /* ------
+  Info Architecture section
+  --------*/
+
+  .info_architecture {
+      background-color: #fff;
+      grid-area: info_architecture;
+      grid-template-areas:
+      ". info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro ."
+      ". user_story user_story user_story . ."
+      ". user_story_img user_story_img user_story_img user_story_img ."
+      ". user_sto_img user_sto_img user_sto_img user_sto_img ."
+      ". content_strategy content_strategy content_strategy content_strategy ."
+      ". img_content_strategy img_content_strategy img_content_strategy img_content_strategy ."
+      ". content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 ."
+      ". conclusion conclusion conclusion conclusion ."
+      "wireframes wireframes wireframes wireframes wireframes wireframes"
+  }
+
+  .wireframes {
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-column-gap: 0rem;
+    grid-row-gap: 3rem;
+    grid-template-areas:
+    ". wireframes_desc wireframes_desc wireframes_desc wireframes_desc  ."
+    ". wireframes_block wireframes_block wireframes_block wireframes_block ."
+  }
+
+
+  /* ------------------------------------------
+  Visuals Section
+  ---------------------------------------------*/
+
+  .visuals {
+    grid-area: visuals;
+    grid-template-areas:
+    ". visuals_intro ."
+    ". hifi ."
+    ". hifi_flow ."
+    ". hifi_flow_img ."
+    ". hifi_2 ."
+  }
+
+  .visuals {
+    display: grid;
+    background: #fff;
+    grid-area: visuals;
+    grid-template-areas:
+    ". visuals_intro visuals_intro visuals_intro visuals_intro ."
+    ". hifi hifi hifi hifi ."
+    ". hifi_flow hifi_flow hifi_flow hifi_flow ."
+    ". hifi_flow_img hifi_flow_img hifi_flow_img hifi_flow_img ."
+    ". hifi_2 hifi_2 hifi_2 hifi_2 ."
+  }
+
+  .style_guide img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* ------------------------------------------
+  Results Section
+  ---------------------------------------------*/
+
+  .results {
+    grid-template-areas:
+    ". kpis ."
+    ". img_kpis ."
+  }
+
+  .results {
+    grid-template-areas:
+    ". kpis kpis kpis . ."
+    ". img_kpis img_kpis . . ."
+  }
 
 
 }

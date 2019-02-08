@@ -307,7 +307,7 @@ imgs
 }
 
 .logo img {
-  max-width: 50px;
+  max-width: 65px;
 }
 
 .project_1_right img, .project_1_left img {
@@ -466,22 +466,44 @@ Buttons
 /* Tablet  */
 @media (min-width: 575px) and (max-width: 979px) {
 
-
-/* .mobile {
-    display: block;
+header {
+    padding: 2rem;
+    background-color: transparent;
 }
 
-.index_item {
-    display: none;
+h1 {
+  font-size: 3.8rem;
 }
 
-.menu_cta {
-    display: none;
+h2 {
+  font-size: 2.4rem;
 }
 
-.desktop {
-  display: none;
-} */
+.project_1, .project_2, .project_2_bis, .project_3, .project_4 {
+  padding: 10rem 0;
+  grid-row-gap: 8rem;
+  grid-template-columns: 1fr 6fr 1fr;
+}
+
+.project_1 {
+  grid-template-areas:
+  ". project_1_left ."
+  ". project_1_right ."
+}
+
+
+.project_1_right img {
+width: 100% !important;
+padding: 0;
+margin: 0;
+}
+
+.project_2 {
+  background-size: cover;
+ grid-template-areas:
+ ". project_2_right ."
+  ". project_2_left ."
+}
 
 }
 
@@ -497,7 +519,7 @@ header {
 }
 
 .logo img {
-    max-width: 3.8rem;
+    max-width: 4.5rem;
 }
 
 .logo_name {

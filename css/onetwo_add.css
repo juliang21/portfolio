@@ -184,6 +184,8 @@ See More
   ". test_recap ."
 }
 
+}
+
 
 /* ----
 CSS for Mobile
@@ -313,5 +315,150 @@ Results Section
   ". results_test3 ."
   ". results_test_img ."
 }
+
+}
+
+
+/* ----
+CSS for Tablet
+-----
+*/
+@media (min-width: 575px) and (max-width: 979px) {
+
+  /* ------
+  Overview sections
+  --------*/
+
+
+  .overview {
+    grid-template-areas:
+    ". role role role role ."
+    ". overview_intro overview_intro overview_intro overview_intro ."
+    ". problem problem problem . ."
+    ". img_problem img_problem img_problem img_problem ."
+    ". solution solution solution . ."
+    ". img_solution img_solution img_solution img_solution ."
+  }
+
+
+  /* ------
+  Research section
+  --------*/
+
+  .research {
+    grid-template-areas:
+    ". research_intro research_intro research_intro research_intro ."
+    ". scoping scoping scoping . ."
+    ". scoping_block scoping_block scoping_block scoping_block ."
+    ". competitive_desc competitive_desc competitive_desc . ."
+    ". competitive_block competitive_block competitive_block competitive_block ."
+    ". competitive_img competitive_img competitive_img competitive_img ."
+    ". survey_desc survey_desc survey_desc survey_desc ."
+    ". survey_block survey_block survey_block survey_block ."
+    "survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight"
+    " . personas personas personas personas ."
+    "research_recap research_recap research_recap research_recap research_recap research_recap"
+  }
+
+  .personas {
+    padding: 5rem 0;
+    display: grid;
+    grid-area: personas;
+    grid-column-gap: 0rem;
+    grid-row-gap: 7rem;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas:
+    "persona_intro persona_intro persona_intro"
+    ". persona1 ."
+    ". persona4 ."
+    ". persona3 ."
+    ". persona2 ."
+  }
+
+  .persona_intro {
+    text-align: left;
+  }
+
+
+  /* ------
+  Info Architecture section
+  --------*/
+
+  .info_architecture {
+      background-color: #fff;
+      grid-area: info_architecture;
+      grid-template-areas:
+      ". info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro ."
+      ". user_story user_story user_story . ."
+      ". user_story_img user_story_img user_story_img user_story_img ."
+      ". user_sto_img user_sto_img user_sto_img user_sto_img ."
+      "wireframes wireframes wireframes wireframes wireframes wireframes"
+  }
+
+  .wireframes {
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-column-gap: 0rem;
+    grid-row-gap: 8rem;
+    grid-template-areas:
+    ". wireframes_desc wireframes_desc wireframes_desc . ."
+    ". wireframes_block wireframes_block wireframes_block wireframes_block ."
+    ". wireframes_img wireframes_img wireframes_img wireframes_img ."
+    ". wireframes_test_desc wireframes_test_desc wireframes_test_desc . ."
+    ". wireframes_test_block wireframes_test_block wireframes_test_block wireframes_test_block ."
+    "wireframes_pic wireframes_pic wireframes_pic wireframes_pic wireframes_pic wireframes_pic"
+    ". wireframes_conclusion wireframes_conclusion wireframes_conclusion wireframes_conclusion ."
+    ". test_before1 test_before1 test_before1 test_before1 ."
+    ". test_before2 test_before2 test_before2 test_before2 ."
+    "test_after test_after test_after test_after test_after test_after"
+    "test_challenge test_challenge test_challenge test_challenge test_challenge test_challenge"
+    ". test_recap test_recap test_recap test_recap ."
+  }
+
+
+  /* ------------------------------------------
+  Visuals Section
+  ---------------------------------------------*/
+
+  .visuals {
+    display: grid;
+    background: #fff;
+    grid-area: visuals;
+    grid-template-areas:
+    ". visuals_intro visuals_intro visuals_intro visuals_intro ."
+    ". branding branding branding branding ."
+    ". branding_block branding_block branding_block branding_block ."
+    ". branding_research branding_research branding_research branding_research ."
+    ". hifi hifi hifi . ."
+    ". hifi_img hifi_img hifi_img hifi_img ."
+    ". hifi_2 hifi_2 hifi_2 hifi_2 ."
+    ". hifi_flow hifi_flow hifi_flow hifi_flow ."
+    ". hifi_flow_img hifi_flow_img hifi_flow_img hifi_flow_img ."
+    ". hifi_3 hifi_3 hifi_3 hifi_3 ."
+  }
+
+  .style_guide img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  /* ------------------------------------------
+  Results Section
+  ---------------------------------------------*/
+
+  .results {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: #fff;
+    grid-area: results;
+    grid-column-gap: 0rem;
+    grid-row-gap: 8rem;
+    grid-template-columns: 2rem auto 2rem;
+    grid-template-areas:
+    ". results_test1 results_test1 results_test1 . ."
+    ". results_test2 results_test2 results_test2 . ."
+    ". results_test3 results_test3 results_test3 . ."
+    ". results_test_img results_test_img . . ."
+  }
+
 
 }

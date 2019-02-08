@@ -206,3 +206,77 @@ Info Architecture section
 }
 
 }
+
+
+/* ----
+CSS for Tablet
+-----
+*/
+@media (min-width: 575px) and (max-width: 979px) {
+
+  /* ------
+  Overview sections
+  --------*/
+
+
+  .overview {
+    grid-template-areas:
+    ". role role role role ."
+    ". overview_intro overview_intro overview_intro overview_intro ."
+  }
+
+
+  /* ------
+  Research section
+  --------*/
+
+  .research {
+    grid-template-areas:
+    ". research_intro ."
+    ". competitive_desc ."
+    "competitive_block competitive_block competitive_block"
+    ". survey_desc ."
+    "survey_insight survey_insight survey_insight"
+  }
+
+  .research {
+    grid-template-areas:
+    ". research_intro research_intro research_intro research_intro ."
+    ". competitive_desc competitive_desc competitive_desc competitive_desc ."
+    "competitive_block competitive_block competitive_block competitive_block competitive_block competitive_block"
+    ". survey_desc survey_desc survey_desc survey_desc ."
+    "survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight"
+  }
+
+
+  /* ------
+  Info Architecture section
+  --------*/
+
+  .info_architecture {
+      display: grid;
+      grid-area: info_architecture;
+      grid-template-areas:
+      ". info_architecture_intro ."
+      ". user_story ."
+      "user_story_img user_story_img user_story_img"
+      ". content_strategy ."
+      "img_content_strategy img_content_strategy img_content_strategy"
+      ". content_strategy_2 ."
+      ". conclusion ."
+  }
+
+  .info_architecture {
+      background-color: #fff;
+      grid-area: info_architecture;
+      grid-template-areas:
+      ". info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro ."
+      ". user_story user_story user_story . ."
+      "user_story_img user_story_img user_story_img user_story_img user_story_img user_story_img"
+      ". content_strategy content_strategy content_strategy content_strategy ."
+      "img_content_strategy img_content_strategy img_content_strategy img_content_strategy img_content_strategy img_content_strategy"
+      ". content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 ."
+      ". conclusion conclusion conclusion conclusion ."
+  }
+
+}

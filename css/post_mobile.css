@@ -1,3 +1,135 @@
+/* Tablet  */
+@media (min-width: 575px) and (max-width: 979px) {
+
+header {
+    padding: 2rem;
+    background-color: transparent;
+}
+
+  .intro {
+    font-size: 1.8rem;
+    color: #30323E;
+    line-height: 4rem;
+  }
+
+  h1 {
+    font-size: 4.2rem;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+    margin-bottom: 15px;
+    line-height: 6rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+
+  .nut_desc {
+    font-size: 1.4rem;
+  }
+
+  /* ------
+  Hero section
+  --------*/
+
+  .roles {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2rem;
+    font-weight: lighter;
+    text-align: center;
+    color: #fff;
+    grid-area: roles;
+  }
+
+
+  .hero h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    line-height: 7.1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .hero h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    line-height: 3rem;
+    margin-bottom: 70px;
+  }
+
+
+/* Here I set the stadanrd grid structure for the main sections. In case I need to modify anything, I do it on each post-specific css file */
+
+.overview, .research, .info_architecture, .visuals, .results, .prototype, .lessons, .failure {
+    padding: 5rem 0;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr 1fr;
+    grid-row-gap: 5rem;
+    grid-column-gap: 0rem;
+  }
+
+.competitive, .competitive-case1, .competitive-case2, .survey, .content_strategy, .content_strategy_2, .branding, .hifi, .hifi_2, .kpis, .branding_img_2, .scoping, .user_story, .hifi_flow {
+    display: flex;
+    flex-direction: column;
+}
+
+.competitive-case1 img, .competitive-case2 img {
+  width: 100%;
+}
+
+.img_competitive {
+  width: 100%;
+  min-width: auto;
+}
+
+.survey_insight {
+  padding: 10rem 10rem;
+}
+
+  .prototype {
+      display: grid;
+      padding-top: 10vh;
+      grid-template-columns: 1fr 4fr 3fr 1fr;
+      grid-area: prototype;
+      grid-template-areas:
+      ". prototype_desc prototype_pic ."
+  }
+
+  .prototype h1 {
+    font-size: 3.8rem;
+    line-height: 5rem;
+  }
+
+  .prototype h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+
+/* ------------------------------------------
+Lessons Section
+---------------------------------------------*/
+.lessons {
+  grid-area: lessons;
+  grid-template-areas:
+  ". lessons_intro lessons_intro lessons_intro lessons_intro ."
+  ". lessons_insights lessons_insights lessons_insights lessons_insights ."
+}
+
+
+}
+
+
 /* Mobile */
 @media screen and (max-width: 575px){
 
