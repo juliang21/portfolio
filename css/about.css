@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Nunito Sans','Roboto','Muli', 'Questrial', sans-serif;
+}
+
+header {
+  padding: 2rem 10rem;
+}
+
+section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+
+.logo_name {
+  font-family: 'Nunito Sans';
+  font-size: 2.8rem;
+  margin-left: 1.5rem;
+}
+
+p {
+  font-family: "Nunito Sans";
+  color: #636B81;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #FF2770;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #000;
+  line-height: 7.1rem;
+  margin-bottom: 30px;
+}
+
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+  line-height: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.bio_intro_mobile {
+  display: none;
+}
+
+.about_container {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 6fr 4fr 1fr;
+  grid-template-areas:
+  ". bio_intro bio_pic ."
+  "bio_highlight bio_highlight bio_highlight bio_highlight"
+  "bio_more bio_more bio_more bio_more"
+  "bio_pic2 bio_pic2 bio_pic2 bio_pic2"
+  ". bio_final bio_final ."
+  "footer footer footer footer"
+}
+
+.index_item a {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #000000;
+  font-size: 1.6rem;
+}
+
+.index_item a:hover {
+  color: #FF7EAA;
+}
+
+.menu_cta a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 40px;
+  border:1px solid #999;
+  /*border-color: #FF7EAA;*/
+  padding: 10px 30px;
+  /* font-weight: bold;*/
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.menu_cta a:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+.logo_name {
+  font-family: 'Nunito Sans';
+  font-size: 2.8rem;
+  margin-left: 1.5rem;
+}
+
+.logo img {
+  max-width: 50px;
+}
+
+.bio_intro {
+  grid-area: bio_intro;
+  align-items: center;
+  /* background-image: url("../img/background_atf.png");*/
+  background-size: cover;
+}
+
+.bio_pic {
+  grid-area: bio_pic;
+  align-items: center;
+}
+
+.bio_pic img, .bio_pic2 img {
+  width: 100%;
+
+}
+
+.bio_highlight {
+  padding: 10rem 20%;
+  background: url("../img/bio/bio_highlight.png");
+  background-size: cover;
+  grid-area: bio_highlight;
+  text-align: center;
+}
+
+.bio_highlight p, .bio_highlight h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+}
+
+.bio_highlight p {
+  font-weight: lighter;
+}
+
+.bio_more {
+  padding: 10rem 8.33%;
+  background: url("../img/bio/background_balls.png");
+  background-repeat: no-repeat;
+  grid-area: bio_more;
+  padding-right: 40%;
+}
+
+.bio_pic2 {
+  grid-area: bio_pic2;
+}
+
+.bio_final {
+  padding-top: 0rem;
+  padding-bottom: 15rem;
+  grid-area: bio_final;
+}
+
+/* ------------------------------------------
+Footer Section
+---------------------------------------------*/
+
+.footer {
+  background: url("../img/background_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: footer;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  padding-top: 55px;
+  text-align: center;
+}
+
+.footer h2 {
+  color: #fff;
+  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  width: auto;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact li {
+  margin-right: 25px;
+  display: inline;
+  float: left;
+}
+
+.size {
+  color: #FFf;
+  width: 48px;
+}
+
+.footer a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #FFF;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 575px){
+
+.about_container {
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 18fr 1fr;
+    grid-template-areas:
+    ". bio_intro ."
+    "bio_pic bio_pic bio_pic"
+    ". bio_intro_mobile ."
+    "bio_highlight bio_highlight bio_highlight"
+    ". bio_more ."
+    "bio_pic2 bio_pic2 bio_pic2"
+    ". bio_final ."
+    "footer footer footer"
+  }
+
+section {
+    padding: 5rem 0;
+}
+
+header {
+  padding: 2rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+h1, h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.logo_name {
+  display: none;
+}
+
+.index_item, .menu_cta, .desktop {
+  display: none;
+}
+
+.bio_intro_mobile {
+  display: block;
+  grid-area: bio_intro_mobile;
+}
+
+.bio_highlight {
+  padding: 10rem 2rem;
+  background-color: #30323E;
+  background-image: none;
+}
+
+.bio_more {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* ------------------------------------------
+Footer Section
+---------------------------------------------*/
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  padding: 0;
+}
+
+.footer h1 {
+  font-size: 3.2rem;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+}
+
+
+.cta-button {
+
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+
+}

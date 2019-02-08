@@ -1,0 +1,52 @@
+.flex-container {
+  display: flex;
+}
+
+.logo {
+  align-self: center;
+}
+
+.menu_item {
+  flex-grow: 15;
+  align-self: center;
+}
+
+.menu_item1 {
+  flex-grow: 10;
+}
+
+.img_post {
+  align-self: flex-end;
+}
+
+.competitive_block {
+  align-self:center;
+}
+
+.nut_list {
+  flex-grow: 1;
+}
+
+
+.survey_desc {
+  flex-grow: 23;
+}
+
+.survey_block {
+  align-self:center;
+}
+
+
+/* ----
+CSS for Mobile
+-----
+*/
+
+@media screen and (max-width: 575px){
+
+.flex-container {
+  display: flex;
+  padding: 0rem 0rem;
+}
+
+}

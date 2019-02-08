@@ -1,0 +1,1218 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  height: 7rem;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+}
+
+body {
+  font-family: 'Nunito Sans','SF Pro display','Muli', 'Questrial', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-areas:
+  "hero hero hero"
+  "overview overview overview"
+  "failure failure failure"
+  "fail_highlight fail_highlight fail_highlight"
+  "research research research"
+  "info_architecture info_architecture info_architecture"
+  "visuals visuals visuals"
+  "results results results"
+  "prototype prototype prototype"
+  "lessons lessons lessons"
+  "footer footer footer"
+}
+
+.flex-container {
+  padding: 0rem 0rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: #30323E;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #25252B;
+  font-size: 4.4rem;
+  font-weight:800;
+  margin-bottom: 25px;
+  line-height: 6rem;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #FF2770;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+p, .lessons_tip {
+  color: #636B81;
+  line-height: 4rem;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.menu_item a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.menu_item a:hover {
+  color: #d9d9d9;
+}
+
+.menu_item1 a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu_item1 a:hover {
+  color: #d9d9d9;
+}
+
+.last {
+margin-right: 15rem;
+}
+
+
+.intro {
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  color: #30323E;
+  line-height: 5rem;
+}
+
+.hero {
+  background-image: url("../img/background_goal_celebration.png");
+  background-size: cover;
+  padding-top: 30vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: hero;
+}
+
+/* ------
+Hero section
+--------*/
+
+.roles {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.2rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #fff;
+  grid-area: roles;
+}
+
+
+.hero h1 {
+  font-size: 5.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  line-height: 7.1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  line-height: 5rem;
+  margin-bottom: 70px;
+}
+
+
+
+/* Basic standard grid structure for sections */
+
+.overview, .info_architecture, .research, .visuals, .results, .lessons {
+  padding: 7.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+}
+
+/* Style for intros */
+
+.overview_intro, .info_architecture_intro, .research_intro, .visuals_intro, .lessons_intro, .failure_intro {
+  align-items: center;
+  text-align: center;
+}
+
+/* ------
+Overview sections
+--------*/
+
+.overview {
+  grid-area: overview;
+  background-color: #fafafa;
+  grid-template-columns: 1fr 1fr 4fr 4fr 1fr 1fr;
+  grid-template-areas:
+  ". role role role role ."
+  ". . overview_intro overview_intro . ."
+  ". problem problem img_problem img_problem ."
+  ". solution solution img_solution img_solution ."
+}
+
+.overview_intro img {
+  width: 120px;
+}
+
+.overview_intro {
+  grid-area: overview_intro;
+}
+
+.problem_info, .solution_info, .img_solution {
+  /* display: flex;*/
+  margin-top: 10rem;
+
+}
+
+.problem_info {
+  grid-area: problem;
+}
+
+.solution_info {
+  grid-area: solution;
+}
+
+.img_problem {
+  grid-area: img_problem;
+  display: flex;
+  align-items: center;
+}
+
+.img_post2 {
+  padding-left: 20%;
+  min-width: 400px;
+}
+
+.img_solution {
+  grid-area: img_solution;
+  display: flex;
+  align-items: flex-end;
+}
+
+.img_solution img {
+  width: 100%;
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    background-color: #fff;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". . info_architecture_intro . ."
+    ". user_story user_story user_story ."
+    ". user_sto_img user_sto_img user_sto_img ."
+    "wireframes wireframes wireframes wireframes wireframes"
+}
+
+
+.prototype h1 {
+  font-size: 5.4rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 7.1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.prototype h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 5rem;
+  margin-bottom: 70px;
+}
+
+
+/* ------
+Research section
+--------*/
+
+.research {
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 4fr 4fr 1fr 1fr;
+  grid-area: research;
+  grid-template-areas:
+  ". . research_intro research_intro . ."
+  ". scoping scoping scoping scoping ."
+  ". competitive_desc competitive_desc competitive_block competitive_block ."
+  ". competitive_img competitive_img competitive_img competitive_img ."
+  ". survey_desc survey_desc survey_block survey_block ."
+  "survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight"
+  "research_recap research_recap research_recap research_recap research_recap research_recap"
+}
+
+.research_intro {
+  display: flex;
+  flex-direction: column;
+  grid-area: research_intro;
+}
+
+.competitive_block {
+  grid-area: competitive_block;
+}
+
+.competitive_desc {
+  grid-area: competitive_desc;
+}
+
+.lessons {
+  background-color: #fafafa;
+  grid-area: lessons;
+  grid-template-areas:
+  ". lessons_intro lessons_intro lessons_intro ."
+  ". . lessons_insights . ."
+}
+
+.lessons_intro {
+  display: flex;
+  flex-direction: column;
+  grid-area: lessons_intro;
+}
+
+.lessons_insights {
+  padding-top: 5rem;
+  align-items: center;
+  grid-area: lessons_insights;
+}
+
+.results {
+  display: grid;
+  grid-area: results;
+  grid-template-columns: 1fr 6fr 2fr 2fr 1fr;
+  grid-template-areas:
+  ". results_test1 results_test1 . ."
+  ". results_test2 results_test2 . ."
+  ". results_test3 results_test_img results_test_img ."
+}
+
+.results_test1 {
+  grid-area: results_test1;
+}
+
+.results_test2 {
+  grid-area: results_test2;
+}
+
+.results_test3 {
+  grid-area: results_test3;
+}
+
+.results_test_img {
+  grid-area: results_test_img;
+}
+
+.prototype {
+    display: grid;
+    background: url('../img/background_goal_celebration.png');
+    padding-top: 30vh;
+    grid-template-columns: 1fr 6fr 4fr 1fr;
+    grid-area: prototype;
+    grid-template-areas:
+    ". prototype_desc prototype_pic ."
+}
+
+.role {
+  padding-bottom: 15rem;
+  background-color: #fafafa;
+  display: flex;
+  grid-area: role;
+}
+
+.nut_list {
+  align-items: center;
+  text-align: center;
+}
+
+.nut_list li {
+  margin-bottom: 0rem;
+  line-height: 3.5rem;
+}
+
+.list_center {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #777;
+}
+
+.nut_title {
+  color: #000;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.nut_desc {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.scoping, .competitive, .survey, .user_story, .content_strategy, .content_strategy_2, .branding_img_2, .hifi, .fail_block, .fail_user_story, .fail_conclusion, .fail_hifi, .fail_hifi_block, .fail_conclusion_2, .highlight, .wireframes, .text, .survey_block, .survey_desc {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.competitive {
+  grid-area: competitive;
+  display: flex;
+}
+
+.scoping {
+  grid-area: scoping;
+  display: flex;
+}
+
+.survey_block {
+  grid-area: survey_block;
+}
+
+.survey_desc {
+  grid-area: survey_desc;
+}
+
+.survey {
+  grid-area: survey;
+  /* display: flex; */
+}
+
+.user_story {
+  display: flex;
+  grid-area: user_story;
+}
+
+.user_sto_img {
+  grid-area: user_sto_img;
+}
+
+.highlight {
+  background-color: #30323E;
+  padding-left: 8.33%;
+  padding-right: 25%;
+}
+
+.highlight h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.highlight p {
+  font-family: 'Raleway', sans-serif;
+  color: #fDfDfD;
+  line-height: 5rem;
+  font-weight: 300;
+}
+
+.highlight_dark {
+  background-color: #FAFAFA;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.highlight_dark h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.highlight_dark p {
+  line-height: 4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.blockquote_line {
+  margin-bottom: 2rem;
+}
+
+.center {
+  position: relative;
+  margin-left: -10rem;
+  left: 50%;
+}
+
+.competitive_img {
+  grid-area: competitive_img;
+}
+
+.competitive-case1, .competitive-case2, .conclusion, .content_strategy, .content_strategy_2, .wireframes, .branding, .branding_img_2, .hifi_2, .kpis {
+  padding-bottom: 10rem;
+  align-items: center;
+  display: flex;
+}
+
+.competitive-case1 {
+  grid-area: competitive-case1;
+}
+
+.competitive-case2 {
+  grid-area: competitive-case2;
+}
+
+.conclusion {
+  grid-area: conclusion;
+}
+
+.survey_insight {
+  background-color: #30323E;
+  display: flex;
+  padding: 150px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: survey_insight;
+}
+
+.research_recap {
+  grid-area: research_recap;
+  padding: 5rem 8.3%;
+}
+
+.info_architecture_intro {
+  grid-area: info_architecture_intro;
+}
+
+.content_strategy {
+  grid-area: content_strategy;
+}
+
+.content_strategy_2 {
+  background-color: #fff;
+  grid-area: content_strategy_2;
+}
+
+.wireframes {
+  background-color: #fafafa;
+  display: grid;
+  grid-area: wireframes;
+  grid-template-columns: 1fr 6fr 4fr 1fr;
+  grid-template-areas:
+  ". wireframes_desc wireframes_block ."
+  ". wireframes_img wireframes_img ."
+  ". wireframes_test_desc wireframes_test_block ."
+  "wireframes_pic wireframes_pic wireframes_pic wireframes_pic"
+  ". wireframes_conclusion wireframes_conclusion ."
+  ". test_before1 test_before2 ."
+  "test_challenge test_challenge test_challenge test_challenge"
+  ". test_after test_after ."
+  ". test_recap test_recap ."
+}
+
+.wireframes_desc {
+  grid-area: wireframes_desc;
+}
+
+.wireframes_block {
+  grid-area: wireframes_block;
+}
+
+.wireframes_img {
+  grid-area: wireframes_img;
+}
+
+.wireframes_test_desc {
+  grid-area: wireframes_test_desc;
+}
+
+.wireframes_test_block {
+  grid-area: wireframes_test_block;
+}
+
+.wireframes_pic {
+  grid-area: wireframes_pic;
+}
+
+.wireframes_conclusion {
+  grid-area: wireframes_conclusion;
+}
+
+.test_before1 {
+  grid-area: test_before1
+}
+
+.test_before2 {
+  grid-area: test_before2;
+}
+
+.test_after {
+  grid-area: test_after;
+}
+
+.test_recap {
+  grid-area: test_recap;
+}
+
+.test_challenge {
+  grid-area: test_challenge;
+}
+
+
+/*Visuals*/
+
+.visuals {
+  display: grid;
+  padding: 15rem 0;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-area: visuals;
+  grid-template-areas:
+  ". . visuals_intro . ."
+  ". branding branding branding ."
+  ". branding_research branding_research branding_research ."
+  ". hifi hifi hifi ."
+  ". hifi_2 hifi_2 hifi_2 ."
+  ". hifi_flow hifi_flow hifi_flow ."
+  ". hifi_3 hifi_3 hifi_3 ."
+}
+
+.visuals_intro {
+  grid-area: visuals_intro;
+}
+
+.branding {
+  grid-area: branding;
+}
+
+.branding_img {
+  grid-area: branding_img;
+}
+
+.branding_img_2 {
+  grid-area: branding_img_2;
+}
+
+.branding_research {
+  grid-area: branding_research;
+}
+
+.branding_research_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.hifi {
+  grid-area: hifi;
+  display: flex;
+}
+
+.hifi_2 {
+  grid-area: hifi_2;
+  display: flex;
+  flex-direction: column;
+}
+
+.hifi_3 {
+  grid-area: hifi_3;
+  display: flex;
+  flex-direction: column;
+}
+
+.hifi_flow {
+  display: flex;
+  grid-area: hifi_flow;
+}
+
+.kpis {
+  grid-area: kpis;
+}
+
+.prototype_desc {
+  grid-area: prototype_desc;
+}
+
+.prototype_pic {
+  grid-area: prototype_pic;
+}
+
+.research img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.blockquote {
+  font-family: "Questrial";
+  font-size: 3.2rem;
+  line-height: 5rem;
+  color: #000;
+}
+
+.blockquote_line, .highlight_line {
+  width: 10rem;
+  background-color: #FF3366;
+  height: .7rem;
+}
+
+.btn_link {
+  margin-top: 5rem;
+}
+
+.author {
+  font-size: 3.6rem;
+  color: #30323E;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.number {
+  color: #FF3366;
+  font-size: 7rem;
+  font-family: "Questrial";
+  margin-bottom: 1rem;
+}
+
+.lessons_number {
+  color: #000000;
+  font-size: 7rem;
+  text-align: center;
+  font-family: "Questrial";
+  margin-bottom: 1rem;
+}
+
+.lessons_tip {
+  margin-bottom: 8rem;
+}
+
+.img_post {
+  /*width: 65rem;*/
+}
+
+li {
+  font-family: "SF Pro display";
+  font-size: 2.8rem;
+  margin-bottom: 8rem;
+  line-height: 4.7rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.cs_img {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.img_cs1 {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.img_style_guide {
+  width: 450px;
+  margin-left: 7rem;
+  margin-bottom: 20px;
+}
+
+.img_prototype {
+  max-width: 90%;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.img_kpis {
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.img_competitive {
+  min-width: 650px;
+  margin-bottom: 20px;
+}
+
+.img_branding {
+  max-width: 600px;
+  margin-left: 5rem;
+  margin-bottom: 20px;"
+}
+
+.img_hifi {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+}
+
+
+/* ----
+Buttons
+-----
+*/
+
+.cta-white a {
+  font-family: 'Raleway', sans-serif;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #4A4A4A;
+  box-shadow: 0px 2px 40px rgba(0,0,0,.3);
+  border-radius: 40px;
+  border:0px;
+  padding: 20px 75px;
+  font-weight: bold;
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.cta-white a:hover {
+  background-color: #FF7EAA;
+  color: #ffffff;
+}
+
+.cta-blue a {
+  font-family: 'Raleway', sans-serif;
+  background-color: #394D84;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  box-shadow: 0px 2px 40px rgba(0,0,0,.3);
+  border-radius: 40px;
+  border:0px;
+  padding: 20px 75px;
+  letter-spacing: 1px;
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.cta-blue a:hover {
+  background-color: #FF7EAA;
+  color: #ffffff;
+}
+
+
+.cta-secondary {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #222222;
+  border-radius: .4rem;
+  border: .1rem solid;
+  border-color: #555;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  letter-spacing: .1rem;
+}
+
+.cta-secondary:hover {
+  background-color: #222;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background: url("../img/background_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  grid-area: footer;
+}
+
+.space {
+  margin-left: 5rem;
+}
+
+.contact {
+  padding-left: 45%;
+}
+
+.contact li {
+  margin-right: 15px;
+  display: inline;
+  float: left;
+}
+
+
+.footer a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+
+.footer a:hover {
+  color: #FFF;
+}
+
+.footer h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 7.1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  line-height: 4.5rem;
+  margin-bottom: 70px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 575px){
+
+header {
+  padding: 2rem;
+  background-color: transparent;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0rem;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "hero hero hero"
+    "overview overview overview"
+    "failure failure failure"
+    "fail_highlight fail_highlight fail_highlight"
+    "research research research"
+    "info_architecture info_architecture info_architecture"
+    "visuals visuals visuals"
+    "results results results"
+    "prototype prototype prototype"
+    "lessons lessons lessons"
+    "footer footer footer"
+  }
+
+section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.research {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 45%;
+    padding-bottom: 5rem;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: hero;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    width: 80%;
+    line-height: 4rem;
+  }
+
+.hero h2 {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+
+
+.roles {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 800;
+}
+
+.intro {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.overview {
+  padding: 10rem 0;
+}
+
+.role {
+  padding-bottom: 8rem;
+}
+
+.nut_list {
+  margin-bottom: 6rem;
+}
+
+.list_center {
+  border: 0px;
+}
+
+.overview, .research {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.problem, .solution, .role, .competitive, .competitive-case1, .competitive-case2, .survey, .content_strategy, .content_strategy_2, .wireframes, .branding, .hifi, .hifi_2, .kpis, .branding_img_2, .failure, .scoping, .user_story, .hifi_flow, .results {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution_info {
+  max-width: 100%;
+}
+
+.blockquote {
+  font-size: 2.4rem;
+}
+
+.survey_insight, .wireframes {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h4 {
+  line-height: 4rem;
+}
+
+.text {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+.space {
+  margin-left: 0rem;
+  margin-top: 3rem;
+}
+
+.test_recap {
+  padding: 5rem 2rem;
+}
+
+.prototype {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.prototype h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 4.5rem;
+}
+
+.prototype h2 {
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 3.5rem;
+  margin-bottom: 70px;
+}
+
+.prototype_desc {
+  margin-bottom: 8rem;
+}
+
+.lessons_tip {
+  font-size: 2rem;
+}
+
+.highlight {
+  background-color: #30323E;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.highlight h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.highlight p {
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+.highlight_dark {
+  background-color: #FAFAFA;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.highlight_dark h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.highlight_dark p {
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  padding: 0;
+}
+
+.footer h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 3.2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  line-height: 4.5rem;
+  margin-bottom: 70px;
+}
+
+.cs_img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.img_cs1 {
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.img_style_guide {
+  width: 100%;
+  margin-left: 0rem;
+  margin-bottom: 0px;
+}
+
+.img_prototype {
+  max-width: 32rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+}
+
+.img_kpis {
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.img_problem {
+  margin-top: 1.5rem;
+  margin-left: 15%;
+  width: 70%;
+  min-width: 20rem;
+}
+
+.img_post {
+  width: 100%;
+}
+.img_problem {
+  padding: 0;
+}
+.img_post2 {
+  padding: 0;
+  min-width: 28rem;
+}
+
+.img_solution {
+ width: 100%;
+ min-width: 32rem;
+}
+
+.img_competitive {
+  width: 100%;
+  margin-bottom: 20px;
+  min-width: 32rem;
+}
+
+.img_branding {
+  max-width: 32rem;
+  width: 100%;
+  margin-left: 0rem;
+  margin-bottom: 0rem;"
+}
+
+.img_hifi {
+  max-width: 32rem;
+  width: 100%;
+}
+
+}

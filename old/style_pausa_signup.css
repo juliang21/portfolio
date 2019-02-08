@@ -1,0 +1,1054 @@
+* {
+box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+header {
+  height: 7rem;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  padding-left: 10rem;
+  padding-right: 10rem;
+
+}
+
+body {
+  font-family: 'Nunito Sans','SF Pro display','Muli', 'Questrial', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-areas:
+  "hero hero hero"
+  "overview overview overview"
+  "failure failure failure"
+  "fail_highlight fail_highlight fail_highlight"
+  "research research research"
+  "info_architecture info_architecture info_architecture"
+  "visuals visuals visuals"
+  "results results results"
+  "prototype prototype prototype"
+  "lessons lessons lessons"
+  "footer footer footer"
+}
+
+.flex-container {
+  padding: 0rem 0rem;
+  align-items: center;
+}
+
+h1 {
+  font-size: 6rem;
+  font-family: "Raleway";
+  font-weight: bold;
+  color: #30323E;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #25252B;
+  font-size: 4.4rem;
+  font-weight:800;
+  margin-bottom: 25px;
+  line-height: 6rem;
+}
+
+h3 {
+  font-family: "Raleway";
+  color: #FF2770;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+p, .lessons_tip {
+  color: #636B81;
+  line-height: 4rem;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.menu_item a {
+  font-family: "Raleway";
+  font-size: 1.6rem;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.menu_item a:hover {
+  color: #d9d9d9;
+}
+
+.menu_item1 a {
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu_item1 a:hover {
+  color: #d9d9d9;
+}
+
+.last {
+margin-right: 15rem;
+}
+
+
+.intro {
+  font-family: "Poppins";
+  font-size: 2.4rem;
+  color: #30323E;
+  line-height: 5rem;
+}
+
+.hero {
+  background: url('../img/pausa/background_pausa.png');
+  background-size: cover;
+  padding-top: 30vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: hero;
+}
+
+
+.overview {
+  padding: 150px 0;
+  /* display: flex;
+  flex-direction: column; */
+  grid-area: overview;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-template-areas:
+  ". role role role ."
+  ". . overview_intro . ."
+  ". problem problem problem ."
+  ". solution solution solution ."
+}
+
+.info_architecture {
+    display: grid;
+    padding: 150px 0;
+    background-color: #fff;
+    grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". . info_architecture_intro . ."
+    ". user_story user_story user_story ."
+    ". content_strategy content_strategy content_strategy ."
+    ". content_strategy_2 content_strategy_2 content_strategy_2 ."
+}
+
+.visuals {
+  display: grid;
+  padding: 15rem 0;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-area: visuals;
+  grid-template-areas:
+  ". . visuals_intro . ."
+  ". branding branding branding ."
+  ". branding_img branding_img branding_img ."
+  ". branding_img_2 branding_img_2 branding_img_2 ."
+  ". hifi hifi hifi ."
+  ". hifi_2 hifi_2 hifi_2 ."
+  ". hifi_flow hifi_flow hifi_flow ."
+}
+
+.roles {
+  font-family: "Raleway";
+  font-size: 2.4rem;
+  font-weight: lighter;
+  text-align: center;
+  color: #fff;
+  grid-area: roles;
+}
+
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  line-height: 7.1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-family: "Raleway";
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  line-height: 5rem;
+  margin-bottom: 70px;
+}
+
+
+.prototype h1 {
+  font-size: 5.4rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 7.1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.prototype h2 {
+  font-family: "Raleway";
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 5rem;
+  margin-bottom: 70px;
+}
+
+
+
+
+.overview img {
+  width: 120px;
+}
+
+.overview_intro, .info_architecture_intro, .research_intro, .visuals_intro, .lessons_intro, .failure_intro {
+  align-items: center;
+  text-align: center;
+}
+
+.overview_intro {
+  grid-area: overview_intro;
+}
+
+.problem {
+  display: flex;
+  padding-top: 100px;
+  grid-area: problem;
+}
+
+.solution {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  grid-area: solution;
+}
+
+.solution_info {
+  max-width: 50%;
+}
+
+.failure {
+  display: grid;
+  padding-top: 15rem;
+  grid-area: failure;
+  grid-template-columns: 1fr 1fr 4fr 4fr 1fr 1fr;
+  grid-template-areas:
+  ". . failure_intro failure_intro . ."
+  ". fail_user_story fail_user_story fail_block fail_block . "
+  ". fail_user_story_img fail_user_story_img fail_user_story_img fail_user_story_img . "
+  ". fail_conclusion fail_conclusion fail_conclusion fail_conclusion ."
+  ". fail_user_story_img2 fail_user_story_img2 fail_user_story_img2 fail_user_story_img2 ."
+  ". fail_hifi fail_hifi fail_hifi_block fail_hifi_block ."
+  ". fail_user_story_img3 fail_user_story_img3 fail_user_story_img3 fail_user_story_img3 ."
+  ". . fail_conclusion_2 fail_conclusion_2 . ."
+  "fail_highlight fail_highlight fail_highlight fail_highlight fail_highlight fail_highlight"
+}
+
+.failure_intro {
+  grid-area: failure_intro;
+}
+
+.fail_user_story {
+  grid-area: fail_user_story;
+}
+
+.fail_block {
+  grid-area: fail_block;
+}
+
+.fail_user_story_img {
+  grid-area: fail_user_story_img;
+}
+
+.fail_conclusion {
+  grid-area: fail_conclusion;
+}
+
+.fail_user_story_img2 {
+  grid-area: fail_user_story_img2;
+}
+
+.fail_user_story_img2 img, .fail_user_story_img3 img {
+  width: 100%;
+}
+
+.fail_hifi {
+  grid-area: fail_hifi;
+}
+
+.fail_hifi_block {
+  grid-area: fail_hifi_block;
+}
+
+.fail_user_story_img3 {
+  grid-area: fail_user_story_img3;
+}
+
+.fail_conclusion_2 {
+  grid-area: fail_conclusion_2;
+}
+
+.fail_highlight {
+  grid-area: fail_highlight;
+}
+
+.research {
+  display: grid;
+  padding-top: 15rem;
+  background-color: #fff;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-area: research;
+  grid-template-areas:
+  ". . research_intro . ."
+  ". competitive competitive competitive ."
+  ". competitive-case1 competitive-case1 competitive-case1 ."
+  ". competitive-case2 competitive-case2 competitive-case2 ."
+  ". conclusion conclusion conclusion ."
+  ". survey survey survey ."
+  "survey_insight survey_insight survey_insight survey_insight survey_insight"
+}
+
+
+
+.research_intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: research_intro;
+}
+
+.lessons {
+  padding-top: 15rem;
+  background-color: #fafafa;
+  grid-area: lessons;
+  display: grid;
+  grid-template-columns: 1fr 1fr 8fr 1fr 1fr;
+  grid-template-areas:
+  ". lessons_intro lessons_intro lessons_intro ."
+  ". . lessons_insights . ."
+}
+
+.lessons_intro {
+  display: flex;
+  flex-direction: column;
+  grid-area: lessons_intro;
+}
+
+.lessons_insights {
+  padding-top: 5rem;
+  align-items: center;
+  grid-area: lessons_insights;
+}
+
+.results {
+  display: grid;
+  grid-area: results;
+  grid-template-columns: 1fr 6fr 4fr 1fr;
+  grid-template-areas:
+  ". kpis kpis ."
+}
+
+.prototype {
+    display: grid;
+    background: url('../img/pausa/background_pausa.png');
+    padding-top: 30vh;
+    grid-template-columns: 1fr 6fr 4fr 1fr;
+    grid-area: prototype;
+    grid-template-areas:
+    ". prototype_desc prototype_pic ."
+}
+
+.role {
+  padding-bottom: 15rem;
+  background-color: #fafafa;
+  display: flex;
+  grid-area: role;
+}
+
+.nut_list {
+  align-items: center;
+  text-align: center;
+}
+
+.nut_list li {
+  margin-bottom: 0rem;
+  line-height: 3.5rem;
+}
+
+.list_center {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-color: #555;
+}
+
+.nut_title {
+  color: #000;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.nut_desc {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.competitive, .survey, .user_story, .content_strategy, .content_strategy_2, .branding_img_2, .hifi, .fail_block, .fail_user_story, .fail_conclusion, .fail_hifi, .fail_hifi_block, .fail_conclusion_2, .highlight {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.competitive {
+  grid-area: competitive;
+  display: flex;
+}
+
+.survey_block {
+  /* padding-left: 5rem;*/
+}
+
+.survey {
+  width: 100%;
+  grid-area: survey;
+  display: flex;
+}
+
+.user_story {
+  grid-area: user_story;
+}
+
+.highlight {
+  background-color: #30323E;
+  padding-left: 8.33%;
+  padding-right: 25%;
+}
+
+.highlight h2 {
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.highlight p {
+  font-family: "Raleway";
+  color: #fDfDfD;
+  line-height: 5rem;
+  font-weight: lighter;
+}
+
+.competitive-case1, .competitive-case2, .conclusion, .content_strategy, .content_strategy_2, .wireframes, .branding, .branding_img_2, .hifi_2, .kpis {
+  padding-bottom: 10rem;
+  align-items: center;
+  display: flex;
+}
+
+.competitive-case1 {
+  grid-area: competitive-case1;
+}
+
+.competitive-case2 {
+  grid-area: competitive-case2;
+}
+
+.conclusion {
+  grid-area: conclusion;
+}
+
+.survey_insight {
+  background-color: #30323E;
+  display: flex;
+  padding: 150px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: survey_insight;
+}
+
+.info_architecture_intro {
+  grid-area: info_architecture_intro;
+}
+
+.content_strategy {
+  grid-area: content_strategy;
+}
+
+.content_strategy_2 {
+  background-color: #fff;
+  grid-area: content_strategy_2;
+}
+
+.visuals_intro {
+  grid-area: visuals_intro;
+}
+
+.branding {
+  grid-area: branding;
+}
+
+.branding_img {
+  grid-area: branding_img;
+}
+
+.branding_img_2 {
+  grid-area: branding_img_2;
+}
+
+.hifi {
+  grid-area: hifi;
+}
+
+.hifi_2 {
+  grid-area: hifi_2;
+}
+
+.hifi_flow {
+  grid-area: hifi_flow;
+}
+
+.kpis {
+  grid-area: kpis;
+}
+
+.prototype_desc {
+  grid-area: prototype_desc;
+}
+
+.prototype_pic {
+  grid-area: prototype_pic;
+}
+
+.research img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.scoping {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  background-color: #fff;
+}
+
+.blockquote {
+  font-family: "Questrial";
+  font-size: 3.2rem;
+  line-height: 5rem;
+  color: #000;
+}
+
+.blockquote_line, .highlight_line {
+  width: 10rem;
+  background-color: #FF3366;
+  height: .7rem;
+}
+
+.author {
+  font-size: 3.6rem;
+  color: #30323E;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.number {
+  color: #FF3366;
+  font-size: 7rem;
+  font-family: "Questrial";
+  margin-bottom: 1rem;
+}
+
+.lessons_number {
+  color: #000000;
+  font-size: 7rem;
+  text-align: center;
+  font-family: "Questrial";
+  margin-bottom: 1rem;
+}
+
+.lessons_tip {
+  margin-bottom: 8rem;
+}
+
+.img_post {
+  /*width: 65rem;*/
+}
+
+li {
+  font-family: "SF Pro display";
+  font-size: 2.8rem;
+  margin-bottom: 8rem;
+  line-height: 4.7rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.cs_img {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.img_cs1 {
+  width: 450px;
+  margin-bottom: 20px;
+}
+
+.img_style_guide {
+  width: 450px;
+  margin-left: 7rem;
+  margin-bottom: 20px;
+}
+
+.img_prototype {
+  max-width: 90%;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
+}
+
+.img_kpis {
+  width: 550px;
+  margin-bottom: 20px;
+}
+
+.img_problem {
+  min-width: 55rem;
+}
+
+.img_solution {
+min-width: 500px;
+}
+
+.img_competitive {
+  min-width: 650px;
+  margin-bottom: 20px;
+}
+
+.img_branding {
+  max-width: 600px;
+  margin-left: 5rem;
+  margin-bottom: 20px;"
+}
+
+.img_hifi {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+}
+
+
+/* ----
+Buttons
+-----
+*/
+
+.cta-white a {
+  font-family: "Raleway";
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #4A4A4A;
+  box-shadow: 0px 2px 40px rgba(0,0,0,.3);
+  border-radius: 40px;
+  border:0px;
+  padding: 20px 75px;
+  font-weight: bold;
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.cta-white a:hover {
+  background-color: #FF7EAA;
+  color: #ffffff;
+}
+
+.cta-blue a {
+  font-family: "Raleway";
+  background-color: #394D84;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  box-shadow: 0px 2px 40px rgba(0,0,0,.3);
+  border-radius: 40px;
+  border:0px;
+  padding: 20px 75px;
+  letter-spacing: 1px;
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.cta-blue a:hover {
+  background-color: #FF7EAA;
+  color: #ffffff;
+}
+
+
+.cta-secondary {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #222222;
+  border-radius: .4rem;
+  border: .1rem solid;
+  border-color: #555;
+  padding: 1.5rem 3rem;
+  font-weight: bold;
+  min-width: 20%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  letter-spacing: .1rem;
+}
+
+.cta-secondary:hover {
+  background-color: #222;
+  color: #ffffff;
+}
+
+.footer {
+  background: url("../img/background_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  grid-area: footer;
+}
+
+.space {
+  margin-left: 5rem;
+}
+
+.contact {
+  padding-left: 45%;
+}
+
+.contact li {
+  margin-right: 15px;
+  display: inline;
+  float: left;
+}
+
+
+.footer a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+
+.footer a:hover {
+  color: #FFF;
+}
+
+.footer h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 7.1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  line-height: 4.5rem;
+  margin-bottom: 70px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 575px){
+
+header {
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0rem;
+    width: 100%;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "hero hero hero"
+    "overview overview overview"
+    "failure failure failure"
+    "fail_highlight fail_highlight fail_highlight"
+    "research research research"
+    "info_architecture info_architecture info_architecture"
+    "visuals visuals visuals"
+    "results results results"
+    "prototype prototype prototype"
+    "lessons lessons lessons"
+    "footer footer footer"
+  }
+
+section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.research {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.hero {
+    padding: 2rem;
+    padding-top: 45%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: hero;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    width: 80%;
+    line-height: 4rem;
+  }
+
+.hero h2 {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+
+
+.roles {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 800;
+}
+
+.intro {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.failure {
+  display: flex;
+}
+
+.fail_highlight {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fail_user_story_img img, .fail_user_story_img3 img, .fail_user_story_img2 img {
+  max-width: 32rem;
+}
+
+.overview {
+  padding: 10rem 0;
+}
+
+.role {
+  padding-bottom: 8rem;
+}
+
+.nut_list {
+  margin-bottom: 6rem;
+}
+
+.list_center {
+  border: 0px;
+}
+
+.problem, .solution, .role, .competitive, .competitive-case1, .competitive-case2, .survey, .content_strategy, .content_strategy_2, .wireframes, .branding, .hifi, .hifi_2, .kpis, .branding_img_2, .failure {
+  flex-direction: column;
+}
+
+.solution_info {
+  max-width: 100%;
+}
+
+.blockquote {
+  font-size: 2.4rem;
+}
+
+.survey_insight {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+.space {
+  margin-left: 0rem;
+  margin-top: 3rem;
+}
+
+.prototype {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.prototype h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 4.5rem;
+}
+
+.prototype h2 {
+  font-family: "Raleway";
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff;
+  line-height: 3.5rem;
+  margin-bottom: 70px;
+}
+
+.prototype_desc {
+  margin-bottom: 8rem;
+}
+
+.lessons_tip {
+  font-size: 2rem;
+}
+
+.highlight {
+  background-color: #30323E;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.highlight h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.highlight p {
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  padding: 0;
+}
+
+.footer h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 3.2rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+  line-height: 4.5rem;
+  margin-bottom: 70px;
+}
+
+.cs_img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.img_cs1 {
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.img_style_guide {
+  width: 100%;
+  margin-left: 0rem;
+  margin-bottom: 0px;
+}
+
+.img_prototype {
+  max-width: 32rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+}
+
+.img_kpis {
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.img_problem {
+  width: 100%;
+  min-width: 32rem;
+}
+
+.img_post {
+  width: 100%;
+}
+
+.img_solution {
+ width: 100%;
+ min-width: 32rem;
+}
+
+.img_competitive {
+  width: 100%;
+  margin-bottom: 20px;
+  min-width: 32rem;
+}
+
+.img_branding {
+  max-width: 32rem;
+  width: 100%;
+  margin-left: 0rem;
+  margin-bottom: 0rem;"
+}
+
+.img_hifi {
+  max-width: 32rem;
+  width: 100%;
+}
+
+}

@@ -1,0 +1,317 @@
+
+/* ------
+Hero section
+--------*/
+
+.hero {
+  background-image: url("../img/background_goal_celebration.png");
+}
+
+/* ------
+Overview section
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role role role role role role ."
+  ". . overview_intro overview_intro overview_intro overview_intro . ."
+  ". problem problem problem img_problem img_problem img_problem ."
+  ". solution solution solution img_solution img_solution img_solution ."
+}
+
+.img_problem img {
+  max-width: 350px;
+}
+
+/* ------
+Research section
+--------*/
+
+.research {
+ grid-row-gap: 0; /* I´m making this adjustment because I cannot set different row gaps, and there´s one that is extra */
+ grid-template-areas:
+ ". . research_intro research_intro research_intro research_intro . ."
+ ". scoping scoping scoping scoping scoping . ."
+ ". scoping_block scoping_block scoping_block scoping_block scoping_block scoping_block ."
+ ". competitive_desc competitive_desc competitive_desc competitive_block competitive_block competitive_block."
+ ". competitive_img competitive_img competitive_img competitive_img competitive_img competitive_img ."
+ ". survey_desc survey_desc survey_desc survey_desc survey_block survey_block ."
+ "survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight"
+ ". personas personas personas personas personas personas ."
+ "research_recap research_recap research_recap research_recap research_recap research_recap research_recap research_recap"
+}
+
+.scoping, .competitive_desc, .competitive_block, .survey_desc, .survey_block {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+  grid-template-areas:
+  ". . info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro . ."
+  ". user_story user_story user_story user_story user_story_img user_story_img ."
+  ". user_sto_img user_sto_img user_sto_img user_sto_img user_sto_img user_sto_img ."
+  "wireframes wireframes wireframes wireframes wireframes wireframes wireframes wireframes"
+}
+
+
+.wireframes {
+  padding-top: 10rem; /* I´m adding a padding top as this is technically a div inside a section (Info Architecture), which is set up to have padding 0 */
+  display: grid; /* This grid setting is because this div is very large. It may or may not be in general */
+  grid-area: wireframes;
+  grid-template-columns: 1fr 6fr 4fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 10rem;
+  grid-template-areas:
+  ". wireframes_desc wireframes_block ."
+  ". wireframes_img wireframes_img ."
+  ". wireframes_test_desc wireframes_test_block ."
+  "wireframes_pic wireframes_pic wireframes_pic wireframes_pic"
+  ". wireframes_conclusion wireframes_conclusion ."
+  ". test_before1 test_before2 ."
+  ". test_after test_after ."
+  "test_challenge test_challenge test_challenge test_challenge"
+  ". test_recap test_recap ."
+}
+
+.game_challenge {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10rem;
+}
+
+.game_challenge li {
+  flex-grow: 1;
+}
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-template-areas:
+  ". . visuals_intro visuals_intro visuals_intro visuals_intro . ."
+  ". branding branding branding branding branding_block branding_block ."
+  ". branding_research branding_research branding_research branding_research branding_research branding_research ."
+  ". hifi hifi hifi hifi_img hifi_img hifi_img ."
+  ". hifi_2 hifi_2 hifi_2 hifi_2 hifi_2 hifi_2 ."
+  ". hifi_flow hifi_flow hifi_flow hifi_flow hifi_flow_img hifi_flow_img ."
+  ". hifi_3 hifi_3 hifi_3 hifi_3 hifi_3 hifi_3 ."
+}
+
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-areas:
+  ". results_test1 results_test1 . ."
+  ". results_test2 results_test_img results_test_img ."
+  ". results_test3 results_test_img results_test_img ."
+}
+
+.img_kpis {
+  width: 100%;
+}
+
+
+/* ------
+Prototype section
+--------*/
+
+.prototype {
+    background: url('../img/background_goal_celebration.png');
+}
+
+
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: url("../img/background_more_pausa_signup.png");
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 20rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_animaedu.png");
+  background-size: cover;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 575px){
+
+.research {
+   grid-row-gap: 0; /* I´m making this adjustment because I cannot set different row gaps, and there´s one that is extra */
+ }
+
+.scoping, .competitive_desc, .competitive_block, .survey_desc, .survey_block {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+.scoping_block {
+  margin-top: 0rem;
+}
+
+.wireframes {
+  grid-template-columns: 2rem auto 2rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 8rem;
+  grid-template-areas:
+  ". wireframes_desc ."
+  ". wireframes_block ."
+  ". wireframes_img ."
+  ". wireframes_test_desc ."
+  ". wireframes_test_block ."
+  "wireframes_pic wireframes_pic wireframes_pic"
+  ". wireframes_conclusion ."
+  ". test_before1 ."
+  ". test_before2 ."
+  "test_after test_after test_after"
+  "test_challenge test_challenge test_challenge"
+  ". test_recap ."
+}
+
+
+/* ----
+CSS for Mobile
+-----
+*/
+
+@media screen and (max-width: 575px){
+
+/* ------
+Overview sections
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role ."
+  ". overview_intro ."
+  ". problem ."
+  ". img_problem ."
+  ". solution ."
+  ". img_solution ."
+}
+
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". research_intro ."
+  ". scoping ."
+  ". scoping_block ."
+  ". competitive_desc ."
+  ". competitive_block ."
+  ". competitive_img ."
+  ". survey_desc ."
+  ". survey_block ."
+  "survey_insight survey_insight survey_insight"
+  " . personas ."
+  "research_recap research_recap research_recap"
+}
+
+.personas {
+  padding: 5rem 0;
+  display: grid;
+  grid-area: personas;
+  grid-column-gap: 5.6rem;
+  grid-row-gap: 7rem;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "persona_intro"
+  "persona1"
+  "persona4"
+  "persona3"
+  "persona2"
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    background-color: #fff;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". info_architecture_intro ."
+    ". user_story ."
+    ". user_story_img ."
+    ". user_sto_img ."
+    "wireframes wireframes wireframes"
+}
+
+.game_challenge {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+
+.game_challenge li {
+  margin-right: 5rem;
+}
+
+
+/* ------------------------------------------
+Visuals Section
+---------------------------------------------*/
+
+.visuals {
+  display: grid;
+  background: #fff;
+  grid-area: visuals;
+  grid-template-areas:
+  ". visuals_intro ."
+  ". branding ."
+  ". branding_block ."
+  ". branding_research ."
+  ". hifi ."
+  ". hifi_img ."
+  ". hifi_2 ."
+  ". hifi_flow ."
+  ". hifi_flow_img ."
+  ". hifi_3 ."
+}
+
+.style_guide img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* ------------------------------------------
+Results Section
+---------------------------------------------*/
+
+.results {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: #fff;
+  grid-area: results;
+  grid-column-gap: 0rem;
+  grid-row-gap: 5rem;
+  grid-template-columns: 2rem auto 2rem;
+  grid-template-areas:
+  ". results_test1 ."
+  ". results_test2 ."
+  ". results_test3 ."
+  ". results_test_img ."
+}
+
+}

@@ -1,0 +1,283 @@
+/* ------
+Hero section
+--------*/
+
+.hero {
+  background-image: url("../img/background_pausa21.png");
+}
+
+.roles {
+  color: #4A4A4A;
+}
+
+
+.hero h1 {
+  color: #64D9F0;
+}
+
+.hero h2 {
+  color: #4A4A4A;
+}
+
+/* ------
+Overview section
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role role role role role role ."
+  ". . overview_intro overview_intro overview_intro overview_intro . ."
+  ". problem problem problem img_problem img_problem img_problem ."
+  ". solution solution solution img_solution img_solution img_solution ."
+}
+
+.img_problem img {
+  align-self: flex-end;
+}
+
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". . research_intro research_intro research_intro research_intro . ."
+  ". competitive_desc competitive_desc competitive_desc competitive_block competitive_block competitive_block ."
+  ". competitive-case1 competitive-case1 competitive-case1 competitive-case1 competitive-case1 competitive-case1 ."
+  ". competitive-case2 competitive-case2 competitive-case2 competitive-case2 competitive-case2 competitive-case2 ."
+  ". conclusion conclusion conclusion conclusion conclusion conclusion ."
+  ". survey_desc survey_desc survey_desc survey_desc survey_block survey_block ."
+  "survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight"
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    display: grid;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". . info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro . ."
+    ". user_story user_story user_story user_story_img user_story_img user_story_img ."
+    ". content_strategy content_strategy content_strategy img_content_strategy img_content_strategy img_content_strategy ."
+    ". content_strategy_2_path content_strategy_2_path content_strategy_2_path content_strategy_2_path content_strategy_2_path content_strategy_2_path ."
+    ". content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2_block content_strategy_2_block content_strategy_2_block ."
+    "wireframes wireframes wireframes wireframes wireframes wireframes wireframes wireframes"
+}
+
+
+
+.wireframes {
+  padding-top: 10rem; /* I´m adding a padding top as this is technically a div inside a section (Info Architecture), which is set up to have padding 0 */
+  display: grid; /* This grid setting is because this div is very large. It may or may not be in general */
+  grid-area: wireframes;
+  grid-template-columns: 1fr 6fr 4fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 10rem;
+  grid-template-areas:
+  ". wireframes_desc wireframes_img ."
+  ". wireframes_pic wireframes_pic ."
+}
+
+.user_story_img {
+  align-self: flex-end;
+}
+
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-area: visuals;
+  grid-template-areas:
+  ". . visuals_intro visuals_intro visuals_intro visuals_intro . ."
+  ". branding branding branding branding branding_block branding_block ."
+  ". branding_img branding_img branding_img branding_img branding_img branding_img ."
+  ". branding_img_2 branding_img_2 branding_img_2 branding_img_2 branding_img_2 branding_img_2 ."
+  ". hifi hifi hifi hifi hifi hifi ."
+  ". hifi_2 hifi_2 hifi_2 hifi_2 img_hifi_2 img_hifi_2 ."
+  ". hifi_flow hifi_flow hifi_flow hifi_flow hifi_flow hifi_flow ."
+}
+
+.hifi_2 {
+  align-self: center;
+}
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-columns: 1fr 7fr 2fr 2fr 1fr;
+  grid-template-areas:
+  ". kpis img_kpis img_kpis ."
+  /* ". img_kpis img_kpis img_kpis ." */
+}
+
+.img_kpis {
+  align-self: center;
+}
+
+.img_kpis img {
+  width: 100%;
+}
+/* ------
+Prototype section
+--------*/
+
+.prototype {
+  background-image: url("../img/background_pausa21.png");
+  background-size: cover;
+}
+
+.prototype h1 {
+  color: #64D9F0;
+}
+
+.prototype h2 {
+  color: #4A4A4A;
+}
+
+@media screen and (max-width: 575px){
+
+/* ------
+Overview sections
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role ."
+  ". overview_intro ."
+  ". problem ."
+  ". img_problem ."
+  ". solution ."
+  ". img_solution ."
+}
+
+.img_problem img {
+  width: 100%;
+  max-width: 32rem;
+}
+
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". research_intro ."
+  ". competitive_desc ."
+  ". competitive_block ."
+  ". competitive-case1 ."
+  ". competitive-case2 ."
+  ". conclusion ."
+  ". survey_desc ."
+  ". survey_block ."
+  "survey_insight survey_insight survey_insight"
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    display: grid;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". info_architecture_intro ."
+    ". user_story ."
+    ". user_story_img ."
+    ". content_strategy ."
+    ". img_content_strategy ."
+    ". content_strategy_2_path ."
+    ". content_strategy_2 ."
+    ". content_strategy_2_block ."
+    "wireframes wireframes wireframes"
+}
+
+
+.wireframes {
+  padding-top: 5rem; /* I´m adding a padding top as this is technically a div inside a section (Info Architecture), which is set up to have padding 0 */
+  padding-bottom: 5rem;
+  display: grid; /* This grid setting is because this div is very large. It may or may not be in general */
+  grid-area: wireframes;
+  grid-template-columns: 2rem auto 2rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 5rem;
+  grid-template-areas:
+  ". wireframes_desc ."
+  ". wireframes_img ."
+  ". wireframes_pic ."
+}
+
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-area: visuals;
+  grid-template-areas:
+  ". visuals_intro ."
+  ". branding ."
+  ". branding_block ."
+  ". branding_img ."
+  ". branding_img_2 ."
+  ". hifi ."
+  ". hifi_2 ."
+  ". img_hifi_2 ."
+  "hifi_flow hifi_flow hifi_flow"
+}
+
+.branding_img_2 img {
+  width: 100%;
+  max-width: 30rem;
+}
+
+.hifi_flow p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.img_hifi_2 img {
+  width: 100%;
+}
+
+.hifi_2 {
+  padding-bottom: 0;
+}
+
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-columns: 2rem auto 2rem;
+  grid-template-areas:
+  ". kpis ."
+  ". img_kpis ."
+}
+
+.kpis {
+  width: 100%;
+}
+
+.prototype {
+  background-image: url("../img/background_pausa21.png");
+  background-size: cover;
+}
+
+.prototype h1 {
+  color: #64D9F0;
+}
+
+.prototype h2 {
+  color: #4A4A4A;
+}

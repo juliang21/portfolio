@@ -1,0 +1,237 @@
+/* ------
+Hero section
+--------*/
+
+.hero {
+  background-image: linear-gradient(30deg, #F7A636 0%, #A654AF 100%);
+}
+
+.hero h2 {
+  width: 90%;
+}
+
+
+/* ------
+Overview section
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role role role role role role ."
+  ". . overview_intro overview_intro overview_intro overview_intro . ."
+  ". problem problem problem problem img_problem img_problem ."
+  ". solution solution solution img_solution img_solution img_solution ."
+}
+
+.img_problem {
+  align-items: center;
+}
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". . research_intro research_intro research_intro research_intro . ."
+  ". competitive_desc competitive_desc competitive_desc competitive_desc competitive_block competitive_block ."
+  ". competitive-case1 competitive-case1 competitive-case1 competitive-case1 competitive-case1 competitive-case1 ."
+  ". competitive-case2 competitive-case2 competitive-case2 competitive-case2 competitive-case2 competitive-case2 ."
+  ". survey_desc survey_desc survey_desc survey_desc survey_desc . ."
+  ". survey_block survey_block survey_block survey_block survey_block survey_block ."
+}
+
+.survey_block img {
+  width: 100%;
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    display: grid;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". . info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro . ."
+    ". user_story user_story user_story user_story user_story_img user_story_img ."
+    ". content_strategy content_strategy content_strategy content_strategy content_strategy content_strategy ."
+    ". img_content_strategy img_content_strategy img_content_strategy img_content_strategy img_content_strategy img_content_strategy ."
+    ". content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 ."
+    ". . conclusion conclusion conclusion conclusion . ."
+    "wireframes wireframes wireframes wireframes wireframes wireframes wireframes wireframes"
+}
+
+.conclusion {
+  padding-bottom: 0;
+}
+
+.wireframes {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: #30323E;
+  display: grid; /* This grid setting is because this div is very large. It may or may not be in general */
+  grid-area: wireframes;
+  grid-template-columns: 1fr 4fr 6fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 10rem;
+  grid-template-areas:
+  ". wireframes_desc wireframes_block ."
+}
+
+.wireframes p, .wireframes h2 {
+  color: #fff;
+}
+
+.wireframes_desc {
+  align-self: center;
+}
+
+.wireframes_block img {
+  width: 100%;
+}
+
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-area: visuals;
+  grid-template-areas:
+  ". . visuals_intro visuals_intro visuals_intro visuals_intro . ."
+  ". hifi hifi hifi hifi hifi hifi ."
+  ". hifi_flow hifi_flow hifi_flow hifi_flow hifi_flow_img hifi_flow_img ."
+  ". hifi_2 hifi_2 hifi_2 hifi_2 hifi_2 hifi_2 ."
+}
+
+.hifi_flow {
+  align-self: center;
+}
+
+.img_hifi {
+  margin: 0;
+}
+
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-columns: 1fr 7fr 3fr 2fr 1fr;
+  grid-template-areas:
+  ". kpis img_kpis img_kpis ."
+}
+
+.img_kpis {
+  align-self: center;
+}
+
+.img_kpis img {
+  width: 100%;
+}
+
+
+/* ------
+Prototype section
+--------*/
+
+.prototype {
+  background: url('../img/background_pausa.png');
+}
+
+
+@media screen and (max-width: 575px){
+
+/* ------
+Overview sections
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role ."
+  ". overview_intro ."
+  ". problem ."
+  ". img_problem ."
+  ". solution ."
+  ". img_solution ."
+}
+
+.img_problem img {
+  width: 100%;
+  max-width: 32rem;
+}
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". research_intro ."
+  ". competitive_desc ."
+  ". competitive_block ."
+  ". competitive-case1 ."
+  ". competitive-case2 ."
+  ". survey_desc ."
+  ". survey_block ."
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    display: grid;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". info_architecture_intro ."
+    ". user_story ."
+    ". user_story_img ."
+    ". content_strategy ."
+    ". img_content_strategy ."
+    ". content_strategy_2 ."
+    ". conclusion ."
+    "wireframes wireframes wireframes"
+}
+
+.wireframes {
+  grid-template-columns: 2rem auto 2rem;
+  grid-column-gap: 0rem;
+  grid-row-gap: 8rem;
+  grid-template-areas:
+  ". wireframes_desc ."
+  ". wireframes_block ."
+}
+
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-area: visuals;
+  grid-template-areas:
+  ". visuals_intro ."
+  ". hifi ."
+  ". hifi_flow ."
+  ". hifi_flow_img ."
+  ". hifi_2 ."
+
+}
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-areas:
+  ". kpis ."
+  ". img_kpis ."
+}
+
+
+}

@@ -1,0 +1,304 @@
+/* ------
+Hero section
+--------*/
+
+.hero {
+  background-image: url("../img/background_pausa.png");
+  background-size: cover;
+}
+
+
+/* ------
+Overview section
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role role role role role role ."
+  ". . overview_intro overview_intro overview_intro overview_intro . ."
+  ". problem problem problem img_problem img_problem img_problem ."
+  ". solution solution solution img_solution img_solution img_solution ."
+}
+
+.img_problem {
+  align-items: flex-end;
+}
+
+
+/* ------
+Failure section / This is a section that shows only on this page
+--------*/
+
+.failure {
+  display: grid;
+  padding: 7.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr;
+  grid-row-gap: 10rem;
+  grid-column-gap: 2rem;
+  grid-area: failure;
+  grid-template-areas:
+  ". . failure_intro failure_intro failure_intro failure_intro . ."
+  ". fail_user_story fail_user_story fail_user_story fail_block fail_block fail_block . "
+  ". fail_user_story_img fail_user_story_img fail_user_story_img fail_user_story_img fail_user_story_img fail_user_story_img . "
+  ". fail_conclusion fail_conclusion fail_conclusion fail_conclusion fail_conclusion fail_conclusion ."
+  ". fail_user_story_img2 fail_user_story_img2 fail_user_story_img2 fail_user_story_img2 fail_user_story_img2 fail_user_story_img2 ."
+  ". fail_hifi fail_hifi fail_hifi fail_hifi_block fail_hifi_block fail_hifi_block ."
+  ". fail_user_story_img3 fail_user_story_img3 fail_user_story_img3 fail_user_story_img3 fail_user_story_img3 fail_user_story_img3 ."
+  ". . fail_conclusion_2 fail_conclusion_2 fail_conclusion_2 fail_conclusion_2 . ."
+  "fail_highlight fail_highlight fail_highlight fail_highlight fail_highlight fail_highlight fail_highlight fail_highlight"
+}
+
+.failure_intro {
+  grid-area: failure_intro;
+}
+
+.fail_user_story {
+  grid-area: fail_user_story;
+}
+
+.fail_block {
+  grid-area: fail_block;
+  align-self: center;
+}
+
+.fail_user_story_img {
+  grid-area: fail_user_story_img;
+}
+
+.fail_conclusion {
+  grid-area: fail_conclusion;
+}
+
+.fail_user_story_img2 {
+  grid-area: fail_user_story_img2;
+}
+
+.fail_user_story_img img, .fail_user_story_img2 img, .fail_user_story_img3 img {
+  width: 100%;
+}
+
+.fail_hifi {
+  grid-area: fail_hifi;
+}
+
+.fail_hifi_block {
+  grid-area: fail_hifi_block;
+  align-self: center;
+}
+
+.fail_user_story_img3 {
+  grid-area: fail_user_story_img3;
+}
+
+.fail_conclusion_2 {
+  grid-area: fail_conclusion_2;
+}
+
+.fail_highlight {
+  grid-area: fail_highlight;
+}
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". . research_intro research_intro research_intro research_intro . ."
+  ". competitive_desc competitive_desc competitive_desc competitive_desc competitive_block competitive_block ."
+  ". competitive-case1 competitive-case1 competitive-case1 competitive-case1 competitive-case1 competitive-case1 ."
+  ". competitive-case2 competitive-case2 competitive-case2 competitive-case2 competitive-case2 competitive-case2 ."
+  ". conclusion conclusion conclusion conclusion conclusion conclusion ."
+  ". survey_desc survey_desc survey_desc survey_desc survey_block survey_block ."
+  "survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight survey_insight"
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    display: grid;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". . info_architecture_intro info_architecture_intro info_architecture_intro info_architecture_intro . ."
+    ". user_story user_story user_story user_story user_story user_story ."
+    ". content_strategy content_strategy content_strategy img_content_strategy img_content_strategy img_content_strategy ."
+    ". content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 ."
+    ". . conclusion conclusion conclusion conclusion . ."
+}
+
+.img_content_strategy {
+  align-self: center;
+}
+
+.content_strategy_2 img {
+  width: 100%;
+}
+
+.conclusion {
+  padding-bottom: 0rem;
+}
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-area: visuals;
+  grid-template-areas:
+  ". . visuals_intro visuals_intro visuals_intro visuals_intro . ."
+  ". branding branding branding branding branding_block branding_block ."
+  ". branding_img branding_img branding_img branding_img branding_img branding_img ."
+  ". branding_img_2 branding_img_2 branding_img_2 branding_img_2 branding_img_2 branding_img_2 ."
+  ". hifi hifi hifi hifi hifi hifi ."
+  ". hifi_2 hifi_2 hifi_2 hifi_2 hifi_2 hifi_2 ."
+  ". hifi_flow hifi_flow hifi_flow hifi_flow hifi_flow hifi_flow ."
+}
+
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-areas:
+  ". kpis kpis img_kpis ."
+}
+
+.img_kpis img {
+  width: 80%;
+}
+
+
+/* ------
+Prototype section
+--------*/
+
+.prototype {
+  background: url('../img/background_pausa.png');
+  background-size: cover;
+}
+
+
+@media screen and (max-width: 575px){
+
+
+/* ------
+Hero section
+--------*/
+
+.roles {
+    font-weight: 500;
+}
+
+/* ------
+Overview sections
+--------*/
+
+.overview {
+  grid-template-areas:
+  ". role ."
+  ". overview_intro ."
+  ". problem ."
+  ". img_problem ."
+  ". solution ."
+  ". img_solution ."
+}
+
+.img_problem img {
+  width: 100%;
+  max-width: 32rem;
+}
+
+
+/* ------
+Failure section / This is a section that shows only on this page
+--------*/
+
+.failure {
+  grid-template-columns: 2rem auto 2rem;
+  grid-template-areas:
+  ". failure_intro ."
+  ". fail_user_story ."
+  ". fail_block ."
+  "fail_user_story_img fail_user_story_img fail_user_story_img"
+  ". fail_conclusion ."
+  ". fail_user_story_img2 ."
+  ". fail_hifi ."
+  ". fail_hifi_block ."
+  ". fail_user_story_img3 ."
+  ". fail_conclusion_2 ."
+  "fail_highlight fail_highlight fail_highlight"
+}
+
+.fail_user_story_img img, .fail_user_story_img img {
+  width: 100%;
+}
+
+/* ------
+Research section
+--------*/
+
+.research {
+  grid-template-areas:
+  ". research_intro ."
+  ". competitive_desc ."
+  ". competitive_block ."
+  ". competitive-case1 ."
+  ". competitive-case2 ."
+  ". conclusion ."
+  ". survey_desc ."
+  ". survey_block ."
+  "survey_insight survey_insight survey_insight"
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    display: grid;
+    grid-area: info_architecture;
+    grid-template-areas:
+    ". info_architecture_intro ."
+    ". user_story ."
+    ". content_strategy ."
+    "img_content_strategy img_content_strategy img_content_strategy"
+    ". content_strategy_2 ."
+    ". conclusion ."
+}
+
+/* ------
+Visual Design section
+--------*/
+
+.visuals {
+  grid-area: visuals;
+  grid-template-areas:
+  ". visuals_intro ."
+  ". branding ."
+  ". branding_block ."
+  ". branding_img ."
+  ". branding_img_2 ."
+  ". hifi ."
+  ". hifi_2 ."
+  ". hifi_flow ."
+}
+
+
+/* ------
+Results section
+--------*/
+
+.results {
+  grid-template-areas:
+  ". kpis ."
+  ". img_kpis ."
+}
+
+
+}

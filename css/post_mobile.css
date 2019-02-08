@@ -1,0 +1,376 @@
+/* Mobile */
+@media screen and (max-width: 575px){
+
+header {
+  padding: 2rem;
+  background-color: transparent;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0rem;
+    width: 100%;
+}
+
+section {
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+}
+
+p {
+  font-size: 2rem;
+}
+
+
+
+.hero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 45%;
+    padding-bottom: 5rem;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: hero;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    width: 80%;
+    line-height: 4rem;
+  }
+
+.hero h2 {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+
+
+.roles {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.intro {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.role {
+  padding-bottom: 8rem;
+}
+
+.nut_list {
+  margin-bottom: 6rem;
+}
+
+.list_center {
+  border: 0px;
+}
+
+/* Basic standard grid structure for sections in mobile devices */
+
+.overview, .research, .info_architecture, .visuals, .results, .prototype, .lessons, .failure {
+  padding: 5rem 0;
+  grid-template-columns: 2rem auto 2rem;
+  grid-row-gap: 5rem;
+  grid-column-gap: 0rem;
+}
+
+/* ------
+Overview sections
+--------*/
+
+
+.solution_info {
+  max-width: 100%;
+}
+
+.img_problem img {
+  width: 70%;
+  max-width: 22rem;
+}
+
+.role, .competitive, .competitive-case1, .competitive-case2, .survey, .content_strategy, .content_strategy_2, .branding, .hifi, .hifi_2, .kpis, .branding_img_2, .scoping, .user_story, .hifi_flow {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------
+Research section
+--------*/
+
+.research {
+  display: grid;
+  grid-area: research;
+}
+
+
+/* ------
+Info Architecture section
+--------*/
+
+.info_architecture {
+    background-color: #fff;
+    grid-area: info_architecture;
+}
+
+.wireframes_test_block img {
+  width: 70%;
+}
+
+
+/* ------------------------------------------
+Visuals Section
+---------------------------------------------*/
+
+.visuals {
+  display: grid;
+  background: #fff;
+  grid-area: visuals;
+}
+
+
+/* ------------------------------------------
+Results Section
+---------------------------------------------*/
+
+.results {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background: #fff;
+  grid-area: results;
+  grid-column-gap: 0rem;
+  grid-row-gap: 5rem;
+  grid-template-columns: 2rem auto 2rem;
+}
+
+
+/* ------------------------------------------
+Prototype Section
+---------------------------------------------*/
+
+
+.prototype {
+    padding-top: 20vh;
+    grid-area: prototype;
+    grid-row-gap: 8rem;
+    grid-template-areas:
+    ". prototype_desc ."
+    ". prototype_pic ."
+}
+
+.prototype h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 4.5rem;
+}
+
+.prototype h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  margin-bottom: 70px;
+}
+
+.img_prototype {
+  max-width: 32rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+}
+
+
+/* ------------------------------------------
+Lessons Section
+---------------------------------------------*/
+
+
+.lessons {
+  background-color: #fafafa;
+  grid-area: lessons;
+  grid-template-areas:
+  ". lessons_intro ."
+  ". lessons_insights ."
+}
+
+
+/* ------------------------------------------
+Footer Section
+---------------------------------------------*/
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  padding: 0;
+}
+
+.footer h1 {
+  font-size: 3.2rem;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+}
+
+
+.cta-button {
+
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+
+.lessons_number {
+  margin-bottom: 3rem;
+}
+
+.lessons_tip {
+  margin-bottom: 10rem;
+}
+
+.blockquote {
+  font-size: 2.4rem;
+}
+
+.survey_insight {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+h4 {
+  line-height: 4rem;
+}
+
+li {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+}
+
+.space_li {
+  margin-bottom: 7rem;
+}
+
+.test_recap {
+  padding: 5rem 2rem;
+}
+
+
+.lessons_tip {
+  font-size: 2rem;
+}
+
+.highlight {
+  padding-top: 10rem;
+  background-color: #30323E;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.highlight h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.highlight p {
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+.highlight_dark {
+  background-color: #FAFAFA;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.highlight_dark h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.highlight_dark p {
+  font-size: 1.8rem;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+.btn_link {
+  margin-top: 3rem;
+}
+
+.cs_img {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.img_cs1 {
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.img_style_guide {
+  width: 100%;
+  margin-left: 0rem;
+  margin-bottom: 0px;
+}
+
+.img_kpis {
+  width: 100%;
+  margin-bottom: 0rem;
+}
+
+.img_post {
+  width: 100%;
+}
+
+.img_post2 {
+  padding: 0;
+  min-width: 28rem;
+}
+
+
+.img_competitive {
+  width: 100%;
+  margin-bottom: 20px;
+  min-width: 32rem;
+}
+
+.img_branding {
+  max-width: 32rem;
+  width: 100%;
+  margin-left: 0rem;
+  margin-bottom: 0rem;"
+}
+
+.img_hifi {
+  max-width: 28rem;
+  width: 100%;margin-top: 5rem;
+  margin-bottom: 0px;
+}
+
+}

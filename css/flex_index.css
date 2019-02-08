@@ -1,0 +1,31 @@
+.flex-header {
+  display: flex;
+}
+
+.logo {
+  align-self: center;
+  flex-grow: 20;
+}
+
+.logo_name {
+  flex-grow: 20;
+  align-self: center;
+}
+
+.index_item {
+  flex-grow: 2;
+  align-self: center;
+}
+
+.menu_cta {
+  align-self: center;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 575px){
+
+.project_1, .project_2, .project_2_bis, .project_3, .project_4 {
+display: flex;
+flex-direction: column;
+}
