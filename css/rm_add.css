@@ -148,6 +148,26 @@ Prototype section
   background: url('../img/background_pausa.png');
 }
 
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: url("../img/background_more_pausa_signup.png");
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 20rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_animaedu.png");
+  background-size: cover;
+}
+
+
 
 @media screen and (max-width: 575px){
 
