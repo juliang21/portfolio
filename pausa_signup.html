@@ -34,6 +34,7 @@
   </head>
   <body>
     <header>
+      <!-- This is the desktop menu -->
       <ul class="flex-container">
       <li class="logo desktop">
       <a href="index.html"><img src="img/logo_bw.png" style="height: 5rem; padding-top: 1.5rem; margin-right: 2rem;"></a>
@@ -48,6 +49,8 @@
         <li class="menu_item1 desktop"><a href="cv/CV_JulianGenoud.pdf" target="_blank">Résumé</a></li>
         <li class="menu_item1 desktop"><a href="mailto:juliangenoud@gmail.com">Get in touch</a></li>
         </ul>
+
+        <!-- This is the mobile/tablet menu -->
         <div class="hamburger_menu mobile tablet" onclick="myHamb(this)">
           <div class="hamb_menu">
             <div class="bar1"></div>
@@ -64,6 +67,8 @@
         </ul>
       </div>
     </header>
+
+    <!-- This is the hero section -->
     <section class="container">
       <section class="hero">
         <span class="roles">Research | Info Architecture | UX/UI Design</span>
@@ -71,6 +76,8 @@
         <h2>This is how I redesigned <span style="font-weight: bold;">the sign-up process</span> in meditation app Pausa.</h2>
         <div class="button"><a class="cta-button blue" href="https://invis.io/PSPLAQ27NAJ#/344931646_Minimalist2_Screen0" target="_blank">VIEW PROTOTYPE</a></div>
       </section>
+
+        <!-- This is the Overview. It contains a short summary of the roles, the problem to solve and the solution -->
       <section class="overview" id="overview">
         <div class="role">
           <div class="nut_list">
@@ -121,8 +128,6 @@
       <div class="img_problem">
           <img src="img/pausa/graph_before.png">
       </div>
-      </div>
-
       <div class="solution_info">
           <img src="img/solution_icon.png" style="width: 100px; margin-bottom: 20px;">
           <h3>THE SOLUTION</h3>
@@ -136,10 +141,9 @@
       <div class="img_solution">
           <img src="img/pausa/pausa.png" class="img_solution">
       </div>
-      </div>
-
-      </div>
       </section>
+
+        <!-- This is the a section called Failure. It´s been made solely for this project. -->
       <section class="failure" id="failure">
         <div class="failure_intro">
           <img src="img/thumbs-down-icon.png" style="width: 100px; margin-bottom: 20px;">
@@ -188,6 +192,8 @@
             <div class="blockquote_line center"></div>
           </div>
       </section>
+
+      <!-- These are lessons from the failure -->
       <section class="fail_highlight">
         <div class="highlight">
             <div class="highlight_line" style="margin-bottom: 3rem;"></div>
@@ -196,13 +202,14 @@
             <p>So we decided we had to understand better what our users valued, what our competition was doing and what changes we could make. Again, this was part of a broader sprint, but we were allowed to leverage on these initiatives to get very valuable information for this particular case.</p>
         </div>
       </section>
+
+      <!-- This is the Research section -->
       <section class="research" id="research">
         <div class="research_intro">
             <img src="img/research_icon.png" style="width: 100px; margin-bottom: 20px;">
             <h1>Research and Discovery</h1>
             <p class="intro">We decided to invest time to research and have a better understanding about what we should be working on. On one hand, we analyzed the competition. On the other, we surveyed our users.</p>
         </div>
-
         <div class="competitive_desc">
             <h3>COMPETITIVE ANALYSIS</h3>
             <h2>Tell me a story.</h2>
@@ -214,7 +221,6 @@
             <div class="blockquote_line center"></div>
           </div>
         </div>
-
         <div class="competitive-case1">
         <div>
         <img src="img/pausa/pausa_headspace.png" class="img_competitive">
@@ -255,8 +261,9 @@
               <li class="space_li">The top reason why some people haven´t continued meditating is because they need some level of guidance and <span style="font-weight:bold">consistency they lack by themselves</span>. That helped us define that we would focus on our beginners´ program.</li>
             </ul>
         </div>
-
     </section>
+
+    <!-- This is the Info Architecture section -->
     <section class="info_architecture" id="architecture">
       <div class="info_architecture_intro">
         <img src="img/info_architecture.png" style="width: 100px; margin-bottom: 20px;">
@@ -289,6 +296,8 @@
             </div>
       </div>
     </section>
+
+    <!-- This is the Visuals section -->
     <section class="visuals" id="visuals">
       <div class="visuals_intro">
         <img src="img/design_icon.png" style="width: 100px; margin-bottom: 20px;">
@@ -304,20 +313,18 @@
       <div class="branding_block">
             <img src="img/pausa/pausa_style_guide.png">
       </div>
-
-        <div class="branding_img">
+      <div class="branding_img">
         <img src="img/pausa/pausa_hi-fi_iteration_1.png" style="width:100%;">
         <img src="img/pausa/pausa_hi-fi_iteration_2.png" style="width:100%;">
         <img src="img/pausa/pausa_hi-fi_iteration_3.png" style="width:100%;">
-        </div>
-        <div class="branding_img_2">
+      </div>
+      <div class="branding_img_2">
           <div>
           <p class="blockquote">From a visual standpoint, and given that we would be adding way more text, we decided to go for the minimalist version (with a white background), instead of our current classic one.</p>
           <div class="blockquote_line center"></div>
           </div>
-        </div>
-        </div>
-        <div class="hifi">
+      </div>
+      <div class="hifi">
             <h3>HIGH FIDELITY PROTOTYPE</h3>
             <h2>A calm, clean and more informative start with Pausa.</h2>
             <p>Once the style was chosen, it was time to start playing with different variations. It ended up being an iterative process between the content that we were adding and the look and feel.</p>
@@ -325,12 +332,14 @@
             <div class="btn_link"><a href="https://drive.google.com/open?id=1nNV4Ht1iJMdURwLIN7I9972MCF1YLPW8" target="_blank" class="cta-secondary">VIEW ALL SCREENS</a></div>
             <img src="img/pausa/pausa_flow_screens_new.png" class="img_hifi">
             <img src="img/pausa/pausa_hi-fi_variant_final.png" class="img_hifi">
-        </div>
-        <div class="hifi_flow">
+      </div>
+      <div class="hifi_flow">
           <p>What you can see above is the final story we decided to launch with. What you can see below are some iterations I made throughout the process. We didn´t have resources for an illustrator, so I wanted to keep it simple, yet intuitive.</p>
           <img src="img/pausa/pausa_hi-fi_variant_iterations.png" class="img_hifi">
-        </div>
+      </div>
     </section>
+
+    <!-- This is the Results section. It may or may not be present on a case study -->
     <section class="results">
       <div class="kpis">
           <h3>RESULTS AND IMPACT</h3>
@@ -342,6 +351,8 @@
           <img src="img/pausa/graph_after.png">
       </div>
     </section>
+
+    <!-- This is the Prototype section -->
     <section class="prototype">
       <div class="prototype_desc">
       <h1>Sign up yourself and start the journey.</h1>
@@ -352,7 +363,9 @@
     <img src="img/pausa/minimalist2_screen1.png" class="img_prototype">
     </div>
     </section>
-      <section class="lessons" id="lessons">
+
+    <!-- This is the Lessons section -->
+    <section class="lessons" id="lessons">
         <div class="lessons_intro">
         <img src="img/conclusions.png" style="width:10rem;">
         <h1>Lessons and further work</h1>
@@ -368,7 +381,7 @@
           <li class="lessons_tip"><span style="font-weight:bold">Remove the “Name” field in the sign-up process, to later on.</span> We are aware that the “Name” field might be noisy at this stage, causing some users to drop off as they need to enter three different types of information before being able to start using the app. We consider it an important field in order to give a higher sense of coziness inside Pausa, so we will develop a way to gather that info after the sign-up if we find that the drop-off is being caused by this.</li>
         </ul>
       </div>
-      </section>
+    </section>
 
       <!-- Here starts the See More section  -->
       <section class="see_more">
