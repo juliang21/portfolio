@@ -740,9 +740,11 @@ See More
 
 .see_more {
   display: grid;
+  grid-template-columns: 6fr 6fr;
   grid-template-areas:
   "more_project_1 more_project_2"
 }
+
 
 .more_project_1 {
   grid-area: more_project_1;
@@ -753,23 +755,39 @@ See More
 }
 
 .more_project_1, .more_project_2 {
-  padding: 7rem 0rem;
-  display: flex;
-  align-items: center;
+  padding: 0rem 0rem;
 }
 
 .more_project_1_layer, .more_project_2_layer {
-  padding: 0rem 10rem;
+  padding: 7rem 10rem;
   display: flex;
   align-items: center;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+.more_project_1 a:hover, .more_project_2 a:hover{
+  text-decoration: none;
 }
 
 .more_project_1_layer:hover, .more_project_2_layer:hover {
   background: rgba(0,0,0,.55);
   color: #000;
+
+}
+
+.more_project_1_layer img, .more_project_2_layer img {
+  z-index: 30;
+  max-width: 25rem;
 }
 
 .more_project_1 h2, .more_project_2 h2 {
+  color: #fff;
+  line-height: 5rem;
+}
+
+.more_project_1 p, .more_project_2 p {
   color: #fff;
 }
 

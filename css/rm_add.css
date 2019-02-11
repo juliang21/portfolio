@@ -205,6 +205,25 @@ Info Architecture section
     ". conclusion ."
 }
 
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: url("../img/background_more_pausa_signup.png");
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 20rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_animaedu.png");
+  background-size: cover;
+}
+
 }
 
 
@@ -277,6 +296,25 @@ CSS for Tablet
       "img_content_strategy img_content_strategy img_content_strategy img_content_strategy img_content_strategy img_content_strategy"
       ". content_strategy_2 content_strategy_2 content_strategy_2 content_strategy_2 ."
       ". conclusion conclusion conclusion conclusion ."
+  }
+
+  /* -----------
+  See More
+  -------------*/
+
+  .more_project_1 {
+    background-image: url("../img/background_more_pausa_signup.png");
+    background-size: cover;
+    display: flex;
+  }
+
+  .more_project_1 img {
+    width: 20rem;
+  }
+
+  .more_project_2 {
+    background-image: url("../img/background_more_animaedu.png");
+    background-size: cover;
   }
 
 }

@@ -126,6 +126,20 @@ Lessons Section
   ". lessons_insights lessons_insights lessons_insights lessons_insights ."
 }
 
+/* -----------
+See More
+-------------*/
+
+.see_more {
+  display: flex;
+  flex-direction: column;
+}
+
+.more_project_1_layer, .more_project_2_layer {
+  flex-direction: column;
+  padding: 7rem 12.5%;
+}
+
 
 }
 
@@ -344,6 +358,25 @@ Lessons Section
   grid-template-areas:
   ". lessons_intro ."
   ". lessons_insights ."
+}
+
+
+/* -----------
+See More
+-------------*/
+
+.see_more {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 6fr 6fr;
+  grid-template-areas:
+  "more_project_1"
+  "more_project_2" */
+}
+
+.more_project_1_layer, .more_project_2_layer {
+  flex-direction: column;
+  padding: 7rem 2rem;
 }
 
 

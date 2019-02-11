@@ -142,6 +142,25 @@ Prototype section
   background: url('../img/background_pausa.png');
 }
 
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: linear-gradient(155deg, #772ED0 0%, #536DFE 100%);
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 30rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_pausa_signup.png");
+  background-size: cover;
+}
+
 
 @media screen and (max-width: 575px){
 
@@ -227,9 +246,29 @@ Results section
 --------*/
 
 .results {
+  grid-template-columns: 2rem auto 2rem;
   grid-template-areas:
   ". kpis ."
   ". img_kpis ."
+}
+
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: linear-gradient(155deg, #772ED0 0%, #536DFE 100%);
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img, .more_project_2 img {
+  width: 20rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_pausa_signup.png");
+  background-size: cover;
 }
 
 }
@@ -348,6 +387,29 @@ CSS for Tablet
     grid-template-areas:
     ". kpis kpis kpis . ."
     ". img_kpis img_kpis . . ."
+  }
+
+  /* -----------
+  See More
+  -------------*/
+
+  .more_project_1 {
+    background-image: linear-gradient(155deg, #772ED0 0%, #536DFE 100%);
+    background-size: cover;
+    display: flex;
+  }
+
+  .more_project_1 img {
+    width: 30rem;
+  }
+
+  .more_project_2 img {
+    width: 20rem;
+  }
+
+  .more_project_2 {
+    background-image: url("../img/background_more_pausa_signup.png");
+    background-size: cover;
   }
 
 

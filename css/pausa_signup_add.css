@@ -182,6 +182,25 @@ Prototype section
   background-size: cover;
 }
 
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: linear-gradient(155deg, #772ED0 0%, #536DFE 100%);
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 30rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_animaedu.png");
+  background-size: cover;
+}
+
 
 @media screen and (max-width: 575px){
 
@@ -298,6 +317,25 @@ Results section
   grid-template-areas:
   ". kpis ."
   ". img_kpis ."
+}
+
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: linear-gradient(155deg, #772ED0 0%, #536DFE 100%);
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 20rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_animaedu.png");
+  background-size: cover;
 }
 
 }
@@ -467,6 +505,25 @@ Prototype Section
 .prototype h1 {
   font-size: 2.8rem !important;
   line-height: 4rem;
+}
+
+/* -----------
+See More
+-------------*/
+
+.more_project_1 {
+  background-image: linear-gradient(155deg, #772ED0 0%, #536DFE 100%);
+  background-size: cover;
+  display: flex;
+}
+
+.more_project_1 img {
+  width: 30rem;
+}
+
+.more_project_2 {
+  background-image: url("../img/background_more_animaedu.png");
+  background-size: cover;
 }
 
 
